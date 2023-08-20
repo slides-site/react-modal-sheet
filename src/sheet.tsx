@@ -4,7 +4,7 @@ import * as ReactDOM from 'react-dom';
 import {
   animate,
   AnimatePresence,
-  motion,
+  m,
   PanInfo,
   Transition,
   useMotionValue,
@@ -241,7 +241,7 @@ const Sheet = React.forwardRef<any, SheetProps>(
 
     const sheet = (
       <SheetContext.Provider value={context}>
-        <motion.div
+        <m.div
           {...rest}
           ref={ref}
           style={{ ...styles.wrapper, zIndex, visibility, ...style }}
@@ -256,7 +256,7 @@ const Sheet = React.forwardRef<any, SheetProps>(
               </SheetScrollerContextProvider>
             ) : null}
           </AnimatePresence>
-        </motion.div>
+        </m.div>
       </SheetContext.Provider>
     );
 

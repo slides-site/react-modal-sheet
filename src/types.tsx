@@ -2,7 +2,7 @@ import {
   DragHandlers,
   MotionValue,
   MotionProps,
-  motion,
+  m,
   EasingDefinition,
   Transition,
 } from 'framer-motion';
@@ -39,7 +39,7 @@ export type SheetProps = {
   disableDrag?: boolean;
   prefersReducedMotion?: boolean;
 } & SheetEvents &
-  React.ComponentPropsWithoutRef<typeof motion.div>;
+  React.ComponentPropsWithoutRef<typeof m.div>;
 
 export type SheetContainerProps = Omit<
   CommonProps,

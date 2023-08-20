@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 import { SheetBackdropProps } from './types';
 import styles from './styles';
@@ -8,7 +8,7 @@ const isClickable = (props: any) => !!props.onClick || !!props.onTap;
 
 const SheetBackdrop = React.forwardRef<any, SheetBackdropProps>(
   ({ style = {}, className = '', ...rest }, ref) => {
-    const Comp = isClickable(rest) ? motion.button : motion.div;
+    const Comp = isClickable(rest) ? m.button : m.div;
     const pointerEvents = isClickable(rest) ? 'auto' : 'none';
 
     return (

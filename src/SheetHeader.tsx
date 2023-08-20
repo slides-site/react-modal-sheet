@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion, useTransform } from 'framer-motion';
+import { m, useTransform } from 'framer-motion';
 
 import { SheetDraggableProps } from './types';
 import { useSheetContext } from './context';
@@ -21,7 +21,7 @@ const SheetHeader = React.forwardRef<any, SheetDraggableProps>(
     );
 
     return (
-      <motion.div
+      <m.div
         {...rest}
         ref={ref}
         style={{ ...styles.headerWrapper, ...style }}
@@ -29,17 +29,17 @@ const SheetHeader = React.forwardRef<any, SheetDraggableProps>(
       >
         {children || (
           <div className="react-modal-sheet-header" style={styles.header}>
-            <motion.span
+            <m.span
               className="react-modal-sheet-drag-indicator"
               style={{ ...styles.indicator, transform: indicator1Transform }}
             />
-            <motion.span
+            <m.span
               className="react-modal-sheet-drag-indicator"
               style={{ ...styles.indicator, transform: indicator2Transform }}
             />
           </div>
         )}
-      </motion.div>
+      </m.div>
     );
   }
 );

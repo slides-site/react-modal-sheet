@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 import { SheetDraggableProps } from './types';
 import { useSheetScrollerContext, useSheetContext } from './context';
@@ -16,7 +16,7 @@ const SheetContent = React.forwardRef<any, SheetDraggableProps>(
         : sheetContext.dragProps;
 
     return (
-      <motion.div
+      <m.div
         {...rest}
         ref={ref}
         className={`react-modal-sheet-content ${className}`}
@@ -24,7 +24,7 @@ const SheetContent = React.forwardRef<any, SheetDraggableProps>(
         {...dragProps}
       >
         {children}
-      </motion.div>
+      </m.div>
     );
   }
 );

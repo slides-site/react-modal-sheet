@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { FaPlay, FaForward, FaRandom } from 'react-icons/fa';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 import { Album as AlbumType } from './data';
 import { MoreButton } from './common';
@@ -216,7 +216,7 @@ const MiniPlayer = styled.div`
   justify-content: center;
 `;
 
-const MiniPlayerButton = styled(motion.button)`
+const MiniPlayerButton = styled(m.button)`
   max-width: 680px;
   outline: none;
   border: none;

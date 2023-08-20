@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { motion } from 'framer-motion';
+import { m } from 'framer-motion';
 
 import { SheetContainerProps } from './types';
 import { useSheetContext } from './context';
@@ -33,7 +33,7 @@ const SheetContainer = React.forwardRef<any, SheetContainerProps>(
         : MAX_HEIGHT;
 
     return (
-      <motion.div
+      <m.div
         {...rest}
         ref={mergeRefs([sheetRef, ref])}
         className={`react-modal-sheet-container ${className}`}
@@ -50,7 +50,7 @@ const SheetContainer = React.forwardRef<any, SheetContainerProps>(
         onAnimationComplete={handleAnimationComplete}
       >
         {children}
-      </motion.div>
+      </m.div>
     );
   }
 );
