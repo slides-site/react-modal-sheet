@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "license": "MIT",
-  "name": "@slides/react-modal-sheet",
+  "name": "@mdagostino/react-modal-sheet",
   "description": "Flexible bottom sheet component for your React apps",
   "author": "Mariano D'Agostino",
   "repository": "https://github.com/slidesite/react-modal-sheet",
@@ -72,5 +72,8 @@
   },
   "dependencies": {
     "@react-aria/utils": "3.17.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }
