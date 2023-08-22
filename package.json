@@ -14,7 +14,7 @@
     "framer-motion"
   ],
   "main": "dist/index.js",
-  "module": "dist/react-modal-sheet.esm.js",
+  "module": "dist/slides-react-modal-sheet.esm.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist",
