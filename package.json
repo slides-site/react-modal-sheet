@@ -1,7 +1,7 @@
 {
   "version": "2.0.0",
   "license": "MIT",
-  "name": "@mdagostino/react-modal-sheet",
+  "name": "slides-react-modal-sheet",
   "description": "Flexible bottom sheet component for your React apps",
   "author": "Mariano D'Agostino",
   "repository": "https://github.com/slidesite/react-modal-sheet",
